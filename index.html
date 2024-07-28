@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./css/dashboard.css"/>
+    <script src="https://kit.fontawesome.com/58d95e6b19.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <section id="formcontainer">
+            <h1>USER</h1>
+            <form>
+                <label for="inNickName">NickName</label>
+                <input id="inNickName" type="text" placeholder="A YPZ"/>
+                <label for="inEmail">Email</label>
+                <input id="inEmail" type="text" placeholder="example@example.com"/>
+                <label for="inPassword">Password</label>
+                <input id="inPassword" type="password"/>
+                <button id="btnappupdate" type="submit">Save</button>
+            </form>
+        </section>
+        <section id="tablecontainer">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th>NickName</th>
+                        <th>Email</th>
+                        <th>Password</th>
+                    </tr>
+
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </section>
+    </main>
+    
+
+    <script src="./js/model/User.js"></script>
+    <script src="./js/controller/user.js"></script>
+    <script src="./js/dashboard.js"></script>
+</body>
+</html>

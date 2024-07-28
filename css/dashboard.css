@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+main{
+    display: grid;
+    gap: 10px;
+    padding: 20px;
+}
+/*form*/
+#formcontainer{
+    background-color: beige;
+    box-shadow: 0px 0px 10px rgb(196, 189, 189);
+}
+#formcontainer >h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Playfair Display", serif;
+    font-size: 3rem;
+}
+#formcontainer >form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px
+}
+#formcontainer >form >input{
+    padding: 8px;
+    border-radius: 6px;
+    border: 2px solid seashell;
+
+}
+#formcontainer >form >button{
+    margin-top: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(235, 230, 161);
+    color: rgb(7, 7, 7);
+}
+#formcontainer >form >button:hover{
+    cursor: pointer;
+    transform: scale(0.90);
+    background: rgb(238,236,174);
+    background: radial-gradient(circle, rgba(238,236,174,1) 0%, rgba(233,212,148,1) 100%);
+}
+/*table*/
+
+table, td, th, tr{
+    border: 1px solid rgb(216, 176, 102);
+    border-collapse: collapse;
+}
+table{
+    width: 100%;
+}
+th{
+    background-color: rgb(224, 173, 95);
+    color: black;
+    padding: 10px 10px;
+}
+td{
+    padding: 10px 10px;
+}
+/*BREKPOINT*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+   
+    main{
+        grid-template-columns: 1fr ;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    main{
+        grid-template-columns: 1fr ;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+   
+    main{
+        grid-template-columns: 1fr 1.8fr;
+    }
+}
